@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+
+    <link rel = "stylesheet" href = "src/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src = "src/script.js"></script>
+    <script src="https://kit.fontawesome.com/da20799651.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class = "container-page">
+        <header>
+            <nav class = "container-navbar">
+                <h1 class = "title-text">
+                    Pedro Barbosa
+                </h1>
+                <ul>
+                    <li class="nav-item">
+                        <a href = "https://www.linkedin.com/in/pedro-barbosa-648904297/" target = "_blank"><i class="primary-icon fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href = "https://github.com/Peguinm" target = "_blank"><i class="primary-icon fa-brands fa-github"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href = "https://peguinm.itch.io/" target = "_blank"><i class="primary-icon fa-brands fa-itch-io"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href = "mailto:pedroozorio30@gmail.com" target = "_blank"><i class="primary-icon fa-solid fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id = "section-profile" class = "active-section" style = "display: block;">
+            <div class = "container-profile">
+                <div class = "col-1">
+                    <img alt = "Profile photo" referrerpolicy="no-referrer" src = "https://i.imgur.com/d9qMvOg.jpeg">
+                </div>
+                <div class = "col-2">
+                    <div class = "text-box">
+                        <h1 class = "title-text">
+                            Welcome
+                        </h1>
+                        <p class = "subtitle-text">
+                            This is my portifolio
+                        <p>
+                        <p class = "normal-text">
+                            My names is Pedro, I'm a Information System student at FHO in Brazil. 
+                        </p>
+                        <p class = "normal-text">
+                            I love programming and create things, specially games, and I've a strong artistic side.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "container-cards">
+                <div class = "card">
+                    <div class = "text-box">
+                        <h1 class = "title-text">
+                            About me
+                        </h1>
+                        <p class = "normal-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nihil 
+                        </p>
+                    </div>
+                    <button class = "btn btn-secondary" onclick = "">More</button>
+                </div>
+                <div class = "card">
+                    <div class = "text-box">
+                        <h1 class = "title-text">
+                            Projects
+                        </h1>
+                        <p class = "normal-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nihil 
+                        </p>
+                    </div>
+                    <button class = "btn btn-secondary" onclick = "">More</button>
+                </div>
+                <div class = "card">
+                    <div class = "text-box">
+                        <h1 class = "title-text">
+                            Não sei
+                        </h1>
+                        <p class = "normal-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nihil 
+                        </p>
+                    </div>
+                    <button class = "btn btn-secondary" onclick = "switchSection('section-projects');">More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id = "section-projects" class = "disable-section">
+            <div class = "container-projects">
+
+            </div>
+        </section>
+
+        <section id = "section-aboutme" class = "disable-section">
+            <div class = "container-aboutme">
+                
+            </div>
+        </section>
+
+        <footer>
+            <div class = "container-footer">
+                <p class = "normal-text">
+                    © 2024 Pedro Barbosa
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

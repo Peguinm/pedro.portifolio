@@ -28,9 +28,9 @@
     }
 }
 
-@keyframes sectionIn {
+@keyframes fullCard {
     0%{
-        translate: -200% 0;
+        scale: 1;
     }
 
     100%{
@@ -51,9 +51,6 @@
 
 /* ---------------- sections switch ----------------  */
 
-.disable-section{
-    animation: sectionOut 1s;
-}
 
 
 /* ---------------- default values ----------------  */
@@ -62,12 +59,18 @@
     animation: fadeIn 1s;
 }
 
+html{
+    min-height: 100%;
+    min-width: 100%;
+}
+
 body{
     background: linear-gradient(to bottom right, var(--bgColor) 60%, var(--secondaryColor));
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
-    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
     overflow-x: hidden;
 }
 
@@ -120,7 +123,7 @@ body{
     font-family: Helvetica;
     font-size: 1em;
     font-weight: 300;
-    padding: 2%;
+    padding: .75em;
     border: 0;
     display: flex;
     align-items: center;
@@ -158,6 +161,7 @@ header{
 
 .container-navbar{
     max-width: 100%;
+    margin-bottom: 2%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -200,6 +204,7 @@ header{
     display: grid;
     background: linear-gradient(.45turn, var(--primaryColor), var(--secondaryColor));
     border-bottom: 10px solid var(--accentColor);
+    border-radius: 10px 10px 0px 10px;
 }
 
 .container-profile > .col-1 img{
@@ -229,6 +234,7 @@ header{
     width: 100%;
     display: grid;  
     border-bottom: 10px solid var(--accentColor);
+    border-radius: 0px 0px 10px 0px;
 }
 
 .container-profile > .col-2 > .text-box{
@@ -266,25 +272,31 @@ header{
     justify-content: space-around;
 }
 
-.container-cards > .card{
+.container-cards >  .card{
     width:40%;
+    height: auto;
     min-width: 250px;
     padding: 2%;
     margin: 2%;
-    background-color: rgba(var(--secondaryColorRGB), 50%);
+    background: linear-gradient(rgba(var(--primaryColorRGB), 50%), rgba(var(--primaryColorRGB), 50%));
     border-radius: 5px;
     transition: .5s;
 }
 
-.container-cards > .card:hover{
-    box-shadow: 15px 15px 1px rgba(var(--accentColorRGB), 50%);
+.hidden-content{
+    display: none;
+}
+
+.container-cards >  .card:hover{
+    background: linear-gradient(45deg, var(--primaryColor), var(--secondaryColor));
+    box-shadow: 15px 15px 1px rgba(var(--secondaryColorRGB), 75%);
     transition: .5s;
 }
 
 .container-cards > .card > .text-box{
-    text-align: left;
+    text-align: justify;
     padding: 2%;
-    width: 75%;
+    width: 95%;
 }
 
 .container-cards > .card > .btn{
@@ -298,10 +310,12 @@ header{
 .container-footer{
     width: 100%;
     margin-top: 5%;
+    padding: 0 2% 0 0;
     height: auto;
     display: flex;
     justify-content: end;
     border-top: 10px solid var(--primaryColor);
+    border-radius: 10px;
 }
 
 
@@ -324,6 +338,7 @@ header{
         /* container foto */
     .container-profile >  .col-1{
         width: 100%;
+        border-radius: 0px 10px 10px 10px;
     }
 
     .container-profile >  .col-1 > img{
@@ -336,6 +351,7 @@ header{
         place-self: center center;
         border-bottom: 0;
         border-left: 10px solid var(--primaryColor);
+        border-radius: 10px 00px 0px 00px;
     }
 
     .container-profile > .col-2 > .text-box{

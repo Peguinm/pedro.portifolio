@@ -7,7 +7,6 @@
 
     <link rel = "stylesheet" href = "src/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script type = "text/javascript" src = "src/script.js"></script>
     <script src="https://kit.fontawesome.com/da20799651.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -45,7 +44,7 @@
                             Welcome
                         </h1>
                         <p class = "subtitle-text">
-                            This is my portifolio
+                            I'm Pedro :)
                         <p>
                         <p class = "normal-text">
                             My names is Pedro, I'm a Information System student at FHO in Brazil. 
@@ -58,18 +57,28 @@
             </div>
 
             <div class = "container-cards">
-                <div class = "card">
+                <div id = "card-aboutme" class = "card">
                     <div class = "text-box">
                         <h1 class = "title-text">
                             About me
                         </h1>
                         <p class = "normal-text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nihil 
+                            Here is  a bunch of text talking about myself. I'd appreciate if you read it.
                         </p>
+                        <div class = "hidden-content">
+                            <p class = "normal-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquid. Nobis non quod repellendus nisi, mollitia distinctio necessitatibus. Libero a officia incidunt architecto modi minus pariatur reiciendis temporibus distinctio quia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas necessitatibus laudantium similique, perferendis illo temporibus? Similique maxime ab optio fugiat, est eius obcaecati explicabo nostrum sed nulla quod consequuntur voluptatibus.
+                            </p>
+                            <p class = "normal-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquid. Nobis non quod repellendus nisi, mollitia distinctio necessitatibus. Libero a officia incidunt architecto modi minus pariatur reiciendis temporibus distinctio quia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas necessitatibus laudantium similique, perferendis illo temporibus? Similique maxime ab optio fugiat, est eius obcaecati explicabo nostrum sed nulla quod consequuntur voluptatibus.
+                            </p>
+                        </div>
                     </div>
-                    <button class = "btn btn-secondary" onclick = "">More</button>
+
+                    <button id = "btn-aboutme" class = "btn btn-primary">More</button>
                 </div>
-                <div class = "card">
+
+                <div id = "card-projects" class = "card">
                     <div class = "text-box">
                         <h1 class = "title-text">
                             Projects
@@ -77,10 +86,20 @@
                         <p class = "normal-text">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nihil 
                         </p>
+
+                        <div class = "hidden-content">
+                            <p class = "normal-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquid. Nobis non quod repellendus nisi, mollitia distinctio necessitatibus. Libero a officia incidunt architecto modi minus pariatur reiciendis temporibus distinctio quia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas necessitatibus laudantium similique, perferendis illo temporibus? Similique maxime ab optio fugiat, est eius obcaecati explicabo nostrum sed nulla quod consequuntur voluptatibus.
+                            </p>
+                            <p class = "normal-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquid. Nobis non quod repellendus nisi, mollitia distinctio necessitatibus. Libero a officia incidunt architecto modi minus pariatur reiciendis temporibus distinctio quia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas necessitatibus laudantium similique, perferendis illo temporibus? Similique maxime ab optio fugiat, est eius obcaecati explicabo nostrum sed nulla quod consequuntur voluptatibus.
+                            </p>
+                        </div>
                     </div>
-                    <button class = "btn btn-secondary" onclick = "">More</button>
+                    <button id = "btn-projects" class = "btn btn-primary" onclick = "">More</button>
                 </div>
-                <div class = "card">
+
+                <div id = "card-studies" class = "card">
                     <div class = "text-box">
                         <h1 class = "title-text">
                             Não sei
@@ -88,21 +107,17 @@
                         <p class = "normal-text">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nihil 
                         </p>
+                        <div class = "hidden-content">
+                            <p class = "normal-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquid. Nobis non quod repellendus nisi, mollitia distinctio necessitatibus. Libero a officia incidunt architecto modi minus pariatur reiciendis temporibus distinctio quia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas necessitatibus laudantium similique, perferendis illo temporibus? Similique maxime ab optio fugiat, est eius obcaecati explicabo nostrum sed nulla quod consequuntur voluptatibus.
+                            </p>
+                            <p class = "normal-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquid. Nobis non quod repellendus nisi, mollitia distinctio necessitatibus. Libero a officia incidunt architecto modi minus pariatur reiciendis temporibus distinctio quia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas necessitatibus laudantium similique, perferendis illo temporibus? Similique maxime ab optio fugiat, est eius obcaecati explicabo nostrum sed nulla quod consequuntur voluptatibus.
+                            </p>
+                        </div>
                     </div>
-                    <button class = "btn btn-secondary" onclick = "switchSection('section-projects');">More</button>
+                    <button id = "btn-studies" class = "btn btn-primary">More</button>
                 </div>
-            </div>
-        </section>
-
-        <section id = "section-projects" class = "disable-section">
-            <div class = "container-projects">
-
-            </div>
-        </section>
-
-        <section id = "section-aboutme" class = "disable-section">
-            <div class = "container-aboutme">
-                
             </div>
         </section>
 
@@ -114,5 +129,7 @@
             </div>
         </footer>
     </div>
+
+    <script type = "text/javascript" src = "src/script.js"></script>
 </body>
 </html>

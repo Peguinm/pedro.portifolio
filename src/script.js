@@ -1,21 +1,14 @@
+$(window).on("scroll", function(){
+    $(".hidden").each(function(){
+        //top element y position
+        var elementTop = $(this).offset().top;
+        //bottom window y position
+        var windowBottom = $(window).scrollTop() + $(window).height();
 
-activeSection = (sectionId) =>{
-    $("#section-aboutme").css("display", "none");
-    $("#section-projects").css("display", "none");
-
-    $(sectionId).css("display", "block");
-    $("html, body").animate({
-        scrollTop : $(sectionId).offset().top
-    }, 500);
-}
-
-$("#btn-aboutme").on("click", function(){
-    activeSection("#section-aboutme")
+        //if top element y < bottom window y then, the element is visible/you scrolled at the element
+        if(elementTop < windowBottom - 100){
+            //fade in effect
+            $(this).addClass("fade").removeClass("hidden");
+        }
+    });
 });
-
-$("#btn-projects").on("click", function(){
-    activeSection("#section-projects")
-});
-
-
-

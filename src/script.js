@@ -6,7 +6,7 @@ $(window).on("scroll", function(){
         var windowBottom = $(window).scrollTop() + $(window).height();
 
         //if top element y < bottom window y then, the element is visible/you scrolled at the element
-        if(elementTop < windowBottom - 100){
+        if(elementTop < windowBottom - 150){
             //fade in effect
             $(this).addClass("fade").removeClass("hidden");
         }

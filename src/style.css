@@ -134,8 +134,8 @@ body{
 /* ---------------- navbar ----------------  */
 .container-navbar{
     width: 100%;
-    margin-top: 2%;
-    margin-bottom: 3%;
+    margin-top: 1%;
+    margin-bottom: 2%;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -146,6 +146,12 @@ body{
 
 .container-navbar > .title-text{
     flex: 1;
+}
+
+.container-navbar > img{
+    flex: 1;
+    filter: drop-shadow(0 0 5px var(--primaryColor)) grayscale(.8);
+    max-width: 60px;
 }
 
 .container-navbar > .container-links{
@@ -241,6 +247,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    position: relative;
 }
 
 #section-projects > .section-text{ 
@@ -248,9 +255,9 @@ body{
 }
 
 .project-card{
-    flex: 1 0 0;
-    min-width: 300px;
-    max-width: 450px;
+    flex: 1;
+    min-width: 350px;
+    max-width: 400px;
     display: grid;
     margin: 2%;
 }
